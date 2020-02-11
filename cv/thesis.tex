@@ -1,0 +1,4 @@
+\cvsection{Master Thesis}
+\begin{cventries}
+\cventry{Technical University Berlin \& Hasso Plattner Institute}{Rethinking Message Brokers on Modern Hardware}{}{}{In this thesis, we propose a message broker architecture that decouples partition handling and storage for improved scaling of storage and load balancing between different storage nodes or brokers. Its protocol ensures message ordering even in the event of retries for parallel messages by utilizing byte-addressable RDMA writes. To ensure message delivery, producers write messages to NVM. Finally, direct transfer of message payloads to or from storage nodes using one-sided RDMA-verbs reduces the CPU overhead on storage nodes and the involvement of brokers. We implement this architecture as part of this thesis and will evaluate its performance against existing solutions such as Apache Kafka.}
+\end{cventries}
